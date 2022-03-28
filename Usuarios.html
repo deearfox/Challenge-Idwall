@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="./assets/css/Styles.css" />
+
+    <link rel="stylesheet" href="./assets/js/script.js" />
+
+    <link
+      href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/fontawesome.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <title>Usuários - Idwall</title>
+  </head>
+  <body>
+    <!-- Menu lateral -->
+            <div class="sidebar close">
+                <div class="logo-details">
+                  <img src="./assets/img/logo_idwall_min.svg" />
+                  <span class="logo_idwall"></span>
+                </div>
+                <ul class="nav-links">
+                  <li>
+                    <a href="#">
+                      <i class="bi bi-house"></i>
+                      <span class="link_name">Home</span>
+                    </a>
+                    <ul class="sub-menu blank">
+                      <li><a class="link_name" href="#">Home</a></li>
+                    </ul>
+                  </li>
+          
+                  <li>
+                    <a href="#">
+                      <i class="bi bi-check2-circle"></i>
+                      <span class="link_name">Protocolos</span>
+                    </a>
+                    <ul class="sub-menu blank">
+                      <li><a class="link_name" href="#">Protocolos</a></li>
+                    </ul>
+                  </li>
+          
+                  <li>
+                    <a href="#">
+                      <i class="bi bi-file-earmark-text"></i>
+                      <span class="link_name">Documentos</span>
+                    </a>
+                    <ul class="sub-menu blank">
+                      <li><a class="link_name" href="#">Documentos</a></li>
+                    </ul>
+                  </li>
+          
+                  <li>
+                    <a href="#">
+                      <i class="bi bi-people"></i>
+                      <span class="link_name">Usuários</span>
+                    </a>
+                    <ul class="sub-menu blank">
+                      <li><a class="link_name" href="#">Usuários</a></li>
+                    </ul>
+                  </li>
+          
+                  <li>
+                    <a href="#">
+                      <i class="bx bx-compass"></i>
+                      <span class="link_name">Fontes</span>
+                    </a>
+                    <ul class="sub-menu blank">
+                      <li><a class="link_name" href="#">Fontes</a></li>
+                    </ul>
+                  </li>
+          
+                  <li>
+                    <a href="#">
+                      <i class="bi bi-file-earmark-bar-graph"></i>
+                      <span class="link_name">Matrizes</span>
+                    </a>
+                    <ul class="sub-menu blank">
+                      <li><a class="link_name" href="#">Matrizes</a></li>
+                    </ul>
+                  </li>
+          
+                  <li>
+                    <a href="#">
+                      <i class="bi bi-ui-checks"></i>
+                      <span class="link_name">Regras</span>
+                    </a>
+                    <ul class="sub-menu blank">
+                      <li><a class="link_name" href="#">Regras</a></li>
+                    </ul>
+                  </li>
+          
+                  <li>
+                    <a href="#">
+                      <i class="bi bi-list-columns-reverse"></i>
+                      <span class="link_name">Atributos</span>
+                    </a>
+                    <ul class="sub-menu blank">
+                      <li><a class="link_name" href="#">Atributos</a></li>
+                    </ul>
+                  </li>
+          
+                  <li>
+                    <a href="#">
+                      <i class="bi bi-tv"></i>
+                      <span class="link_name">Monitor</span>
+                    </a>
+                    <ul class="sub-menu blank">
+                      <li><a class="link_name" href="./Monitor.html">Monitor</a></li>
+                    </ul>
+                  </li>
+          
+                  <li>
+                    <a href="#">
+                      <i class="bi bi-bezier"></i>
+                      <span class="link_name">Organizações</span>
+                    </a>
+                    <ul class="sub-menu blank">
+                      <li><a class="link_name" href="#">Organizações</a></li>
+                    </ul>
+                  </li>
+          
+                  <li>
+                    <a href="#">
+                      <i class="bi bi-box-arrow-left"></i>
+                      <span class="link_name">Sair</span>
+                    </a>
+                    <ul class="sub-menu blank">
+                      <li><a class="link_name" href="#">Sair</a></li>
+                    </ul>
+                  </li>
+                </ul>
+                </div>
+                </div>
+            </div>
+    <!-- Fim Menu lateral -->
+    
+    <!-- Início Section consulta usuário -->
+    <main>
+        <div class="">
+            <div class="row justify-content-between pt-5" id="head-list">
+                    <div class="col-2">
+                        <p class="text-uppercase"><b>Consulta Usuários</b></p>
+                        <p id="subtitle">Funcionários/Clientes</p>
+                    </div>
+         
+                <!-- Filtros e Search Bar -->
+                <div class="col-1">
+                    <div class="dropdown">
+                        <div class="dropdown-select">
+                            <span class="select">Por Status</span>
+                            <img src="./assets/img/downward-arrow.png" alt="selecionar">
+                        </div>
+    
+                        <div class="dropdown-list">
+                            <div class="dropdown-list_item">Ativo</div>
+                            <div class="dropdown-list_item">Inativo</div>
+    
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Filtros e Search Bar -->
+                <div class="col-1">
+                    <div class="dropdown">
+                        <div class="dropdown-select">
+                            <span class="select">Por Usuário</span>
+                            <img src="./assets/img/downward-arrow.png" alt="selecionar">
+                        </div>
+                        <div class="dropdown-list">
+                            <div class="dropdown-list_item">Fucionário</div>
+                            <div class="dropdown-list_item">Cliente</div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="col-1">
+                    <div class="dropdown">
+                        <div class="dropdown-select">
+                            <span class="select">Por Ordem</span>
+                            <img src="./assets/img/downward-arrow.png" alt="selecionar">
+                        </div>
+                        <div class="dropdown-list">
+                            <div class="dropdown-list_item">ID</div>
+                            <div class="dropdown-list_item">Nome</div>
+                            <div class="dropdown-list_item">Quantidade</div>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Filtros e Search Bar -->
+                <div class="col-2">
+                    <form action="" method="get" class="search-bar">
+                        <div class="search_field" onclick="funcao1()">
+                            <input type="text" placeholder="Pesquisar" name="q">
+                            <button type="submit"><img src="./assets/img/magnifying-glass.png" alt=""></button>
+                        </div>
+                    </form>
+                </div>
+    
+                <!-- botão adicionar novo usuário-->
+                <div class="col-1">
+                    <div class="button" id="add_user">
+                        <div class="text-icon">
+                            <i class="bi bi-person-plus-fill"></i>
+                            <span class="text">Add Usuário</span>
+                        </div>
+                    </div>
+                    <!-- Fim botão adicionar novo usuário -->
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- Fim Section consulta usuário -->
+
+    <!-- Section Tabela de Usuários -->
+    <section>
+        <div class="row my-5">
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID Cliente</th>
+                        <th>Cliente</th>
+                        <th>E-mail</th>
+                        <th>Produto/Serviço</th>
+                        <th>Quantidade</th>
+                        <th>Acesso</th>
+                        <th>BackOffice</th>
+                        <th>ID Network</th>
+                        <th>Status</th>
+                        <th>Ações</th>
+                        
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1026</td>
+                        <td>Mariana Lopes</td>
+                        <td>mariana@gmail.com</td>
+                        <td>Protocolo</td>
+                        <td>23</td>
+                        <td>Sim</td>
+                        <td>Sim</td>
+                        <td>Não</td>
+                        <td>
+                          <p class="status status-on">Ativo</p>
+                        </td>
+                        <td>
+                            <div class="button">
+                                <div class="text-icon">
+                                    <i class="bi bi-arrow-bar-right"></i>
+                                    <span class="text">Logar</span>
+                                </div>
+                            </div>
+
+                            <div class="button" id="edit_button">
+                                <div class="text-icon">
+                                    <i class="bi bi-pencil-square"></i>
+                                    <span class="text">Editar</span>
+                                </div>
+
+                            </div>
+
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>2541</td>
+                        <td>Ifood</td>
+                        <td>ifood@ifood.com.br</td>
+                        <td>Protocolo</td>
+                        <td>58</td>
+                        <td>Não</td>
+                        <td>Sim</td>
+                        <td>Sim</td>
+                        <td>
+                          <p class="status status-off">Inativo</p>
+                        </td>
+                        <td>
+                            <div class="button">
+                                <div class="text-icon">
+                                    <i class="bi bi-arrow-bar-right"></i>
+                                    <span class="text">Logar</span>
+                                </div>
+
+                            </div>
+
+                            <div class="button" id="edit_button">
+                                <div class="text-icon">
+                                    <i class="bi bi-pencil-square"></i>
+                                    <span class="text">Editar</span>
+                                </div>
+
+                            </div>
+                        </td>
+                    </tr>
+
+                    <tr>
+                      <td>761</td>
+                      <td>Nayara Alves</td>
+                      <td>Não</td>
+                      <td>Protocolo</td>
+                      <td>4</td>
+                      <td>Não</td>
+                      <td>Sim</td>
+                      <td>Sim</td>
+                      <td>
+                        <p class="status status-on">Ativo</p>
+                      </td>
+                      <td>
+                        <div class="button">
+                          <div class="text-icon">
+                            <i class="bi bi-arrow-bar-right"></i>
+                            <span class="text">Logar</span>
+                          </div>
+
+                        </div>
+
+                        <div class="button" id="edit_button">
+                          <div class="text-icon">
+                            <i class="bi bi-pencil-square"></i>
+                            <span class="text">Editar</span>
+                          </div>
+
+                        </div>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td>752</td>
+                      <td>Marcos Salomao</td>
+                      <td>marcossalamao@outlook.com</td>
+                      <td>Protocolo</td>
+                      <td>5</td>
+                      <td>Não</td>
+                      <td>Sim</td>
+                      <td>Sim</td>
+                      <td>
+                        <p class="status status-on">Ativo</p>
+                      </td>
+                      <td>
+                        <div class="button">
+                          <div class="text-icon">
+                            <i class="bi bi-arrow-bar-right"></i>
+                            <span class="text">Logar</span>
+                          </div>
+
+                        </div>
+
+                        <div class="button" id="edit_button">
+                          <div class="text-icon">
+                            <i class="bi bi-pencil-square"></i>
+                            <span class="text">Editar</span>
+                          </div>
+
+                        </div>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td>2541</td>
+                      <td>Lucas</td>
+                      <td>Não</td>
+                      <td>Protocolo</td>
+                      <td>1</td>
+                      <td>Não</td>
+                      <td>Sim</td>
+                      <td>Sim</td>
+                      <td>
+                        <p class="status status-on">Ativo</p>
+                      </td>
+                      <td>
+                        <div class="button">
+                          <div class="text-icon">
+                            <i class="bi bi-arrow-bar-right"></i>
+                            <span class="text">Logar</span>
+                          </div>
+
+                        </div>
+
+                        <div class="button" id="edit_button">
+                          <div class="text-icon">
+                            <i class="bi bi-pencil-square"></i>
+                            <span class="text">Editar</span>
+                          </div>
+
+                        </div>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td>365</td>
+                      <td>Eduarda Alves</td>
+                      <td>edualves@gmail.com</td>
+                      <td>Protocolo</td>
+                      <td>35</td>
+                      <td>Sim</td>
+                      <td>Sim</td>
+                      <td>Sim</td>
+                      <td>
+                        <p class="status status-on">Ativo</p>
+                      </td>
+                      <td>
+                        <div class="button">
+                          <div class="text-icon">
+                            <i class="bi bi-arrow-bar-right"></i>
+                            <span class="text">Logar</span>
+                          </div>
+
+                        </div>
+
+                        <div class="button" id="edit_button">
+                          <div class="text-icon">
+                            <i class="bi bi-pencil-square"></i>
+                            <span class="text">Editar</span>
+                          </div>
+
+                        </div>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td>2541</td>
+                      <td>Alex Fogaça</td>
+                      <td>alex_fogaca@hotmail.com</td>
+                      <td>Protocolo</td>
+                      <td>58</td>
+                      <td>Sim</td>
+                      <td>Não</td>
+                      <td>Sim</td>
+                      <td>
+                        <p class="status status-on">Ativo</p>
+                      </td>
+                      <td>
+                        <div class="button">
+                          <div class="text-icon">
+                            <i class="bi bi-arrow-bar-right"></i>
+                            <span class="text">Logar</span>
+                          </div>
+
+                        </div>
+
+                        <div class="button" id="edit_button">
+                          <div class="text-icon">
+                            <i class="bi bi-pencil-square"></i>
+                            <span class="text">Editar</span>
+                          </div>
+
+                        </div>
+                      </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+    <!-- Section Tabela de Usuários -->
+
+    <!-- Script do menu lateral -->
+    <script>
+      let sidebar = document.querySelector(".sidebar");
+      sidebar.addEventListener("click", () => {
+        sidebar.classList.toggle("close");
+      });
+    </script>
+    <!-- Fim do Script do menu lateral -->
+
+    <!-- Script alerta de usuário não encontrado -->
+    <script>
+      function funcao1() {
+        var x;
+        var r = confirm(
+          "O usuário não foi encontrado. Gostaria de adicioná-lo?"
+        );
+        if (r == true) {
+          x = "você pressionou OK!";
+        } else {
+          x = "Você pressionou Cancelar!";
+        }
+        document.getElementById("demo").innerHTML = x;
+      }
+    </script>
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
